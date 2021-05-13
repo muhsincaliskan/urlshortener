@@ -1,0 +1,27 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "url shortener",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "muhsincaliskan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "mongoose": "^5.12.8",
+    "monk": "^7.3.4",
+    "morgan": "^1.10.0",
+    "shortid": "^2.2.16",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
