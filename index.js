@@ -3,7 +3,7 @@ const cors = require('cors');
 const morgan =require('morgan');
 const helmet = require('helmet');
 
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 // const shortUrl = require('../models/shortUrl');
 
 const app = express()
@@ -14,9 +14,9 @@ app.use(express.json())
 app.use(express.static('./public'))
 
 const port = process.env.PORT || 1337
-mongoose.connect('mongodb://localhost/urlShortener', {
-    useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: true
-})
+// mongoose.connect('mongodb://localhost/urlShortener', {
+//     useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: true
+// })
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: false }))
 // app.get('/', async (req, res) => {
